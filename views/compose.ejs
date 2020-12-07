@@ -1,0 +1,12 @@
+<%- include("header") %>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <label for="titleCompose">Title</label><br>
+    <input class="textBox" id="title" type="text" name="titleCompose"><br>
+    <label for="textCompose">Post</label><br>
+    <textarea class="textBox" name="textCompose" id="text" cols="30" rows="10"></textarea>
+    <button class="btn  btn-primary" type="submit" name="submit">Publish</button>
+</form>
+
+<%- include("noFooter") %> 

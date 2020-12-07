@@ -1,0 +1,11 @@
+<%- include("header") %>
+
+<h1>Home</h1>
+<p class="textContent"><%= homeText %></p>
+
+<% for(let post of newPost) { %>
+<h1><%= post.title %> </h1>
+<%- post.post %>
+<% } %>
+
+<%- include("footer") %>
